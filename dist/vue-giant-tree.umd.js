@@ -96,6 +96,35 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ({
 
+/***/ "0d58":
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.14 / 15.2.3.14 Object.keys(O)
+var $keys = __webpack_require__("ce10");
+var enumBugKeys = __webpack_require__("e11e");
+
+module.exports = Object.keys || function keys(O) {
+  return $keys(O, enumBugKeys);
+};
+
+
+/***/ }),
+
+/***/ "0fb5":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("2350")(false);
+// imports
+exports.i(__webpack_require__("e6c6"), "");
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "1157":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10702,32 +10731,16 @@ return jQuery;
 
 /***/ }),
 
-/***/ "1910":
+/***/ "230e":
 /***/ (function(module, exports, __webpack_require__) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("2235");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__("499e").default
-var update = add("058b8596", content, true, {"sourceMap":false,"shadowMode":false});
-
-/***/ }),
-
-/***/ "2235":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("2350")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".ztree[data-v-c5d0020c]{text-align:left;font-size:14px}.ztree[data-v-c5d0020c] li{list-style-type:none;white-space:nowrap;outline:none}.ztree[data-v-c5d0020c] li ul{position:relative;padding:0 0 0 20px;margin:0}.ztree[data-v-c5d0020c] .line:before{position:absolute;top:0;left:10px;height:100%;content:\"\";border-right:1px dotted #dbdbdb}.ztree[data-v-c5d0020c] .bottom_docu:after,.ztree[data-v-c5d0020c] .bottom_docu:before,.ztree[data-v-c5d0020c] .center_docu:after,.ztree[data-v-c5d0020c] .center_docu:before,.ztree[data-v-c5d0020c] .roots_docu:after,.ztree[data-v-c5d0020c] .roots_docu:before{position:absolute;content:\"\";border:0 dotted #dbdbdb}.ztree[data-v-c5d0020c] .roots_docu:before{left:10px;height:50%;top:50%;border-left-width:1px}.ztree[data-v-c5d0020c] .roots_docu:after{top:50%;left:11px;width:50%;border-top-width:1px}.ztree[data-v-c5d0020c] .center_docu:before{left:10px;height:100%;border-left-width:1px}.ztree[data-v-c5d0020c] .center_docu:after{top:50%;left:11px;width:50%;border-top-width:1px}.ztree[data-v-c5d0020c] .bottom_docu:before{left:10px;height:50%;border-left-width:1px}.ztree[data-v-c5d0020c] .bottom_docu:after{top:50%;left:11px;width:50%;border-top-width:1px}.ztree[data-v-c5d0020c] li a{display:inline-block;line-height:22px;height:22px;margin:0;cursor:pointer;-webkit-transition:none;transition:none;vertical-align:middle;color:#555}.ztree[data-v-c5d0020c] .node_name{display:inline-block;padding:0 3px;border-radius:4px}.ztree[data-v-c5d0020c] .curSelectedNode .node_name{color:#000;background-color:#c9e9f7}.ztree[data-v-c5d0020c] .curSelectedNode_Edit{height:20px;opacity:.8;color:#000;border:1px solid #6cc2e8;background-color:#9dd6f0}.ztree[data-v-c5d0020c] .tmpTargetNode_inner{opacity:.8;color:#fff;background-color:#4fcbf0;filter:alpha(opacity=80)}.ztree[data-v-c5d0020c] .rename{font-size:12px;line-height:22px;width:80px;height:22px;margin:0;padding:0;vertical-align:top;border:0;background:none}.ztree[data-v-c5d0020c] .button{position:relative;display:inline-block;line-height:22px;height:22px;width:22px;cursor:pointer;text-align:center;vertical-align:middle}.ztree[data-v-c5d0020c] .button.edit{color:#25ae88}.ztree[data-v-c5d0020c] .button.remove{color:#cb4042}.ztree[data-v-c5d0020c] .button.chk{position:relative;width:14px;height:14px;margin:0 4px 0 0;border:1px solid #d7dde4;border-radius:2px;background:#fff}.ztree[data-v-c5d0020c] .chk.radio_false_disable,.ztree[data-v-c5d0020c] .chk.radio_false_full,.ztree[data-v-c5d0020c] .chk.radio_false_full_focus,.ztree[data-v-c5d0020c] .chk.radio_false_part,.ztree[data-v-c5d0020c] .chk.radio_false_part_focus,.ztree[data-v-c5d0020c] .chk.radio_true_disable,.ztree[data-v-c5d0020c] .chk.radio_true_full,.ztree[data-v-c5d0020c] .chk.radio_true_full_focus,.ztree[data-v-c5d0020c] .chk.radio_true_part,.ztree[data-v-c5d0020c] .chk.radio_true_part_focus{border-radius:8px}.ztree[data-v-c5d0020c] .button.chk:after{position:absolute;top:1px;left:4px;width:4px;height:8px;content:\"\";transition:-webkit-transform .2s ease-in-out;-webkit-transition:-webkit-transform .2s ease-in-out;transition:transform .2s ease-in-out;transition:transform .2s ease-in-out,-webkit-transform .2s ease-in-out;-webkit-transform:rotate(0deg) scale(0);transform:rotate(0deg) scale(0);border-right:2px solid #fff;border-bottom:2px solid #fff}.ztree[data-v-c5d0020c] .button.checkbox_false_full_focus{border-color:#ccc}.ztree[data-v-c5d0020c] .button.checkbox_true_disable,.ztree[data-v-c5d0020c] .button.checkbox_true_full,.ztree[data-v-c5d0020c] .button.checkbox_true_full_focus,.ztree[data-v-c5d0020c] .button.checkbox_true_part,.ztree[data-v-c5d0020c] .button.checkbox_true_part_focus{border-color:#39f;background-color:#39f}.ztree[data-v-c5d0020c] .button.checkbox_true_disable:after,.ztree[data-v-c5d0020c] .button.checkbox_true_full:after,.ztree[data-v-c5d0020c] .button.checkbox_true_full_focus:after{-webkit-transform:rotate(45deg) scale(1);transform:rotate(45deg) scale(1)}.ztree[data-v-c5d0020c] .button.checkbox_true_part:after,.ztree[data-v-c5d0020c] .button.checkbox_true_part_focus:after{top:5px;left:2px;width:10px;height:1px;-webkit-transform:rotate(0deg) scale(1);transform:rotate(0deg) scale(1);border-right:0}.ztree[data-v-c5d0020c] .button.radio_true_full,.ztree[data-v-c5d0020c] .chk.radio_true_full_focus,.ztree[data-v-c5d0020c] .chk.radio_true_part,.ztree[data-v-c5d0020c] .chk.radio_true_part_focus{border-color:#39f}.ztree[data-v-c5d0020c] .button.radio_true_full:after,.ztree[data-v-c5d0020c] .chk.radio_true_full_focus:after,.ztree[data-v-c5d0020c] .chk.radio_true_part:after,.ztree[data-v-c5d0020c] .chk.radio_true_part_focus:after{top:3px;left:3px;width:8px;-webkit-transform:rotate(0deg) scale(1);transform:rotate(0deg) scale(1);border:0;border-radius:4px;background:#39f}.ztree[data-v-c5d0020c] .button.checkbox_false_disable,.ztree[data-v-c5d0020c] .button.checkbox_true_disable,.ztree[data-v-c5d0020c] .chk.radio_false_disable,.ztree[data-v-c5d0020c] .chk.radio_true_disable{cursor:not-allowed}.ztree[data-v-c5d0020c] .button.checkbox_false_disable{background-color:#f3f3f3}.ztree[data-v-c5d0020c] .button.bottom_close:before,.ztree[data-v-c5d0020c] .button.bottom_open:before,.ztree[data-v-c5d0020c] .button.center_close:before,.ztree[data-v-c5d0020c] .button.center_open:before,.ztree[data-v-c5d0020c] .button.noline_close:before,.ztree[data-v-c5d0020c] .button.noline_open:before,.ztree[data-v-c5d0020c] .button.root_close:before,.ztree[data-v-c5d0020c] .button.root_open:before,.ztree[data-v-c5d0020c] .button.roots_close:before,.ztree[data-v-c5d0020c] .button.roots_open:before{position:absolute;top:5px;left:5px;content:\"\";transition:-webkit-transform .3s ease;-webkit-transition:-webkit-transform .3s ease;transition:transform .3s ease;transition:transform .3s ease,-webkit-transform .3s ease;-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:25% 50%;transform-origin:25% 50%;border:6px solid;border-color:transparent transparent transparent #666}.ztree[data-v-c5d0020c] .button.bottom_open:before,.ztree[data-v-c5d0020c] .button.center_open:before,.ztree[data-v-c5d0020c] .button.noline_open:before,.ztree[data-v-c5d0020c] .button.root_open:before,.ztree[data-v-c5d0020c] .button.roots_open:before{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.ztree[data-v-c5d0020c] .button.ico_loading{margin-right:2px;background:url(\"data:image/gif;base64,R0lGODlhEAAQAKIGAMLY8YSx5HOm4Mjc88/g9Ofw+v///wAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAGACwAAAAAEAAQAAADMGi6RbUwGjKIXCAA016PgRBElAVlG/RdLOO0X9nK61W39qvqiwz5Ls/rRqrggsdkAgAh+QQFCgAGACwCAAAABwAFAAADD2hqELAmiFBIYY4MAutdCQAh+QQFCgAGACwGAAAABwAFAAADD1hU1kaDOKMYCGAGEeYFCQAh+QQFCgAGACwKAAIABQAHAAADEFhUZjSkKdZqBQG0IELDQAIAIfkEBQoABgAsCgAGAAUABwAAAxBoVlRKgyjmlAIBqCDCzUoCACH5BAUKAAYALAYACgAHAAUAAAMPaGpFtYYMAgJgLogA610JACH5BAUKAAYALAIACgAHAAUAAAMPCAHWFiI4o1ghZZJB5i0JACH5BAUKAAYALAAABgAFAAcAAAMQCAFmIaEp1motpDQySMNFAgA7\") 0 no-repeat}.ztree[data-v-c5d0020c] .tmpTargetzTree{opacity:.8;background-color:#2ea9df;filter:alpha(opacity=80)}.ztree[data-v-c5d0020c] .tmpzTreeMove_arrow{position:absolute;width:18px;height:18px;color:#4fcbf0}.ztree[data-v-c5d0020c] .ztree.zTreeDragUL{overflow:hidden;position:absolute;width:auto;height:auto;margin:0;padding:0;opacity:.8;border:1px dotted #176b53;background-color:#dbdbdb;filter:alpha(opacity=80)}.zTreeMask[data-v-c5d0020c]{position:absolute;z-index:10000;opacity:0;background-color:#cfcfcf;filter:alpha(opacity=0)}", ""]);
-
-// exports
+var isObject = __webpack_require__("d3f4");
+var document = __webpack_require__("7726").document;
+// typeof document.createElement is 'object' in old IE
+var is = isObject(document) && isObject(document.createElement);
+module.exports = function (it) {
+  return is ? document.createElement(it) : {};
+};
 
 
 /***/ }),
@@ -10811,6 +10824,130 @@ function toComment(sourceMap) {
 
 	return '/*# ' + data + ' */';
 }
+
+
+/***/ }),
+
+/***/ "2621":
+/***/ (function(module, exports) {
+
+exports.f = Object.getOwnPropertySymbols;
+
+
+/***/ }),
+
+/***/ "2aba":
+/***/ (function(module, exports, __webpack_require__) {
+
+var global = __webpack_require__("7726");
+var hide = __webpack_require__("32e9");
+var has = __webpack_require__("69a8");
+var SRC = __webpack_require__("ca5a")('src');
+var $toString = __webpack_require__("fa5b");
+var TO_STRING = 'toString';
+var TPL = ('' + $toString).split(TO_STRING);
+
+__webpack_require__("8378").inspectSource = function (it) {
+  return $toString.call(it);
+};
+
+(module.exports = function (O, key, val, safe) {
+  var isFunction = typeof val == 'function';
+  if (isFunction) has(val, 'name') || hide(val, 'name', key);
+  if (O[key] === val) return;
+  if (isFunction) has(val, SRC) || hide(val, SRC, O[key] ? '' + O[key] : TPL.join(String(key)));
+  if (O === global) {
+    O[key] = val;
+  } else if (!safe) {
+    delete O[key];
+    hide(O, key, val);
+  } else if (O[key]) {
+    O[key] = val;
+  } else {
+    hide(O, key, val);
+  }
+// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative
+})(Function.prototype, TO_STRING, function toString() {
+  return typeof this == 'function' && this[SRC] || $toString.call(this);
+});
+
+
+/***/ }),
+
+/***/ "2d00":
+/***/ (function(module, exports) {
+
+module.exports = false;
+
+
+/***/ }),
+
+/***/ "2d95":
+/***/ (function(module, exports) {
+
+var toString = {}.toString;
+
+module.exports = function (it) {
+  return toString.call(it).slice(8, -1);
+};
+
+
+/***/ }),
+
+/***/ "32e9":
+/***/ (function(module, exports, __webpack_require__) {
+
+var dP = __webpack_require__("86cc");
+var createDesc = __webpack_require__("4630");
+module.exports = __webpack_require__("9e1e") ? function (object, key, value) {
+  return dP.f(object, key, createDesc(1, value));
+} : function (object, key, value) {
+  object[key] = value;
+  return object;
+};
+
+
+/***/ }),
+
+/***/ "3862":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("0fb5");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__("499e").default
+var update = add("6eeeb9a2", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
+/***/ "4588":
+/***/ (function(module, exports) {
+
+// 7.1.4 ToInteger
+var ceil = Math.ceil;
+var floor = Math.floor;
+module.exports = function (it) {
+  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
+};
+
+
+/***/ }),
+
+/***/ "4630":
+/***/ (function(module, exports) {
+
+module.exports = function (bitmap, value) {
+  return {
+    enumerable: !(bitmap & 1),
+    configurable: !(bitmap & 2),
+    writable: !(bitmap & 4),
+    value: value
+  };
+};
 
 
 /***/ }),
@@ -11078,14 +11215,689 @@ function applyToTag (styleElement, obj) {
 
 /***/ }),
 
-/***/ "5ea6":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "4bf8":
+/***/ (function(module, exports, __webpack_require__) {
+
+// 7.1.13 ToObject(argument)
+var defined = __webpack_require__("be13");
+module.exports = function (it) {
+  return Object(defined(it));
+};
+
+
+/***/ }),
+
+/***/ "52a7":
+/***/ (function(module, exports) {
+
+exports.f = {}.propertyIsEnumerable;
+
+
+/***/ }),
+
+/***/ "5537":
+/***/ (function(module, exports, __webpack_require__) {
+
+var core = __webpack_require__("8378");
+var global = __webpack_require__("7726");
+var SHARED = '__core-js_shared__';
+var store = global[SHARED] || (global[SHARED] = {});
+
+(module.exports = function (key, value) {
+  return store[key] || (store[key] = value !== undefined ? value : {});
+})('versions', []).push({
+  version: core.version,
+  mode: __webpack_require__("2d00") ? 'pure' : 'global',
+  copyright: '© 2019 Denis Pushkarev (zloirock.ru)'
+});
+
+
+/***/ }),
+
+/***/ "5aa5":
+/***/ (function(module, exports) {
+
+/*
+ * JQuery zTree exHideNodes v3.5.40
+ * http://treejs.cn/
+ *
+ * Copyright (c) 2010 Hunter.z
+ *
+ * Licensed same as jquery - MIT License
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * email: hunter.z@263.net
+ * Date: 2019-01-18
+ */
+(function ($) {
+  var _setting = {
+    data: {
+      key: {
+        isHidden: "isHidden"
+      }
+    }
+  };
+  //default init node of exLib
+  var _initNode = function (setting, level, n, parentNode, isFirstNode, isLastNode, openFlag) {
+      var isHidden = data.isHidden(setting, n);
+      data.isHidden(setting, n, isHidden);
+      data.initHideForExCheck(setting, n);
+    },
+    //add dom for check
+    _beforeA = function (setting, node, html) {
+    },
+    //update zTreeObj, add method of exLib
+    _zTreeTools = function (setting, zTreeTools) {
+      zTreeTools.showNodes = function (nodes, options) {
+        view.showNodes(setting, nodes, options);
+      }
+      zTreeTools.showNode = function (node, options) {
+        if (!node) {
+          return;
+        }
+        view.showNodes(setting, [node], options);
+      }
+      zTreeTools.hideNodes = function (nodes, options) {
+        view.hideNodes(setting, nodes, options);
+      }
+      zTreeTools.hideNode = function (node, options) {
+        if (!node) {
+          return;
+        }
+        view.hideNodes(setting, [node], options);
+      }
+
+      var _checkNode = zTreeTools.checkNode;
+      if (_checkNode) {
+        zTreeTools.checkNode = function (node, checked, checkTypeFlag, callbackFlag) {
+          if (!!node && !!data.isHidden(setting, node)) {
+            return;
+          }
+          _checkNode.apply(zTreeTools, arguments);
+        }
+      }
+    },
+    //method of operate data
+    _data = {
+      initHideForExCheck: function (setting, n) {
+        var isHidden = data.isHidden(setting, n);
+        if (isHidden && setting.check && setting.check.enable) {
+          if (typeof n._nocheck == "undefined") {
+            n._nocheck = !!n.nocheck
+            n.nocheck = true;
+          }
+          n.check_Child_State = -1;
+          if (view.repairParentChkClassWithSelf) {
+            view.repairParentChkClassWithSelf(setting, n);
+          }
+        }
+      },
+      initShowForExCheck: function (setting, n) {
+        var isHidden = data.isHidden(setting, n);
+        if (!isHidden && setting.check && setting.check.enable) {
+          if (typeof n._nocheck != "undefined") {
+            n.nocheck = n._nocheck;
+            delete n._nocheck;
+          }
+          if (view.setChkClass) {
+            var checkObj = $$(n, consts.id.CHECK, setting);
+            view.setChkClass(setting, checkObj, n);
+          }
+          if (view.repairParentChkClassWithSelf) {
+            view.repairParentChkClassWithSelf(setting, n);
+          }
+        }
+      }
+    },
+    //method of operate ztree dom
+    _view = {
+      clearOldFirstNode: function (setting, node) {
+        var n = node.getNextNode();
+        while (!!n) {
+          if (n.isFirstNode) {
+            n.isFirstNode = false;
+            view.setNodeLineIcos(setting, n);
+            break;
+          }
+          if (n.isLastNode) {
+            break;
+          }
+          n = n.getNextNode();
+        }
+      },
+      clearOldLastNode: function (setting, node, openFlag) {
+        var n = node.getPreNode();
+        while (!!n) {
+          if (n.isLastNode) {
+            n.isLastNode = false;
+            if (openFlag) {
+              view.setNodeLineIcos(setting, n);
+            }
+            break;
+          }
+          if (n.isFirstNode) {
+            break;
+          }
+          n = n.getPreNode();
+        }
+      },
+      makeDOMNodeMainBefore: function (html, setting, node) {
+        var isHidden = data.isHidden(setting, node);
+        html.push("<li ", (isHidden ? "style='display:none;' " : ""), "id='", node.tId, "' class='", consts.className.LEVEL, node.level, "' tabindex='0' hidefocus='true' treenode>");
+      },
+      showNode: function (setting, node, options) {
+        data.isHidden(setting, node, false);
+        data.initShowForExCheck(setting, node);
+        $$(node, setting).show();
+      },
+      showNodes: function (setting, nodes, options) {
+        if (!nodes || nodes.length == 0) {
+          return;
+        }
+        var pList = {}, i, j;
+        for (i = 0, j = nodes.length; i < j; i++) {
+          var n = nodes[i];
+          if (!pList[n.parentTId]) {
+            var pn = n.getParentNode();
+            pList[n.parentTId] = (pn === null) ? data.getRoot(setting) : n.getParentNode();
+          }
+          view.showNode(setting, n, options);
+        }
+        for (var tId in pList) {
+          var children = data.nodeChildren(setting, pList[tId]);
+          view.setFirstNodeForShow(setting, children);
+          view.setLastNodeForShow(setting, children);
+        }
+      },
+      hideNode: function (setting, node, options) {
+        data.isHidden(setting, node, true);
+        node.isFirstNode = false;
+        node.isLastNode = false;
+        data.initHideForExCheck(setting, node);
+        view.cancelPreSelectedNode(setting, node);
+        $$(node, setting).hide();
+      },
+      hideNodes: function (setting, nodes, options) {
+        if (!nodes || nodes.length == 0) {
+          return;
+        }
+        var pList = {}, i, j;
+        for (i = 0, j = nodes.length; i < j; i++) {
+          var n = nodes[i];
+          if ((n.isFirstNode || n.isLastNode) && !pList[n.parentTId]) {
+            var pn = n.getParentNode();
+            pList[n.parentTId] = (pn === null) ? data.getRoot(setting) : n.getParentNode();
+          }
+          view.hideNode(setting, n, options);
+        }
+        for (var tId in pList) {
+          var children = data.nodeChildren(setting, pList[tId]);
+          view.setFirstNodeForHide(setting, children);
+          view.setLastNodeForHide(setting, children);
+        }
+      },
+      setFirstNode: function (setting, parentNode) {
+        var children = data.nodeChildren(setting, parentNode);
+        var isHidden = data.isHidden(setting, children[0], false);
+        if (children.length > 0 && !isHidden) {
+          children[0].isFirstNode = true;
+        } else if (children.length > 0) {
+          view.setFirstNodeForHide(setting, children);
+        }
+      },
+      setLastNode: function (setting, parentNode) {
+        var children = data.nodeChildren(setting, parentNode);
+        var isHidden = data.isHidden(setting, children[0]);
+        if (children.length > 0 && !isHidden) {
+          children[children.length - 1].isLastNode = true;
+        } else if (children.length > 0) {
+          view.setLastNodeForHide(setting, children);
+        }
+      },
+      setFirstNodeForHide: function (setting, nodes) {
+        var n, i, j;
+        for (i = 0, j = nodes.length; i < j; i++) {
+          n = nodes[i];
+          if (n.isFirstNode) {
+            break;
+          }
+          var isHidden = data.isHidden(setting, n);
+          if (!isHidden && !n.isFirstNode) {
+            n.isFirstNode = true;
+            view.setNodeLineIcos(setting, n);
+            break;
+          } else {
+            n = null;
+          }
+        }
+        return n;
+      },
+      setFirstNodeForShow: function (setting, nodes) {
+        var n, i, j, first, old;
+        for (i = 0, j = nodes.length; i < j; i++) {
+          n = nodes[i];
+          var isHidden = data.isHidden(setting, n);
+          if (!first && !isHidden && n.isFirstNode) {
+            first = n;
+            break;
+          } else if (!first && !isHidden && !n.isFirstNode) {
+            n.isFirstNode = true;
+            first = n;
+            view.setNodeLineIcos(setting, n);
+          } else if (first && n.isFirstNode) {
+            n.isFirstNode = false;
+            old = n;
+            view.setNodeLineIcos(setting, n);
+            break;
+          } else {
+            n = null;
+          }
+        }
+        return {"new": first, "old": old};
+      },
+      setLastNodeForHide: function (setting, nodes) {
+        var n, i;
+        for (i = nodes.length - 1; i >= 0; i--) {
+          n = nodes[i];
+          if (n.isLastNode) {
+            break;
+          }
+          var isHidden = data.isHidden(setting, n);
+          if (!isHidden && !n.isLastNode) {
+            n.isLastNode = true;
+            view.setNodeLineIcos(setting, n);
+            break;
+          } else {
+            n = null;
+          }
+        }
+        return n;
+      },
+      setLastNodeForShow: function (setting, nodes) {
+        var n, i, j, last, old;
+        for (i = nodes.length - 1; i >= 0; i--) {
+          n = nodes[i];
+          var isHidden = data.isHidden(setting, n);
+          if (!last && !isHidden && n.isLastNode) {
+            last = n;
+            break;
+          } else if (!last && !isHidden && !n.isLastNode) {
+            n.isLastNode = true;
+            last = n;
+            view.setNodeLineIcos(setting, n);
+          } else if (last && n.isLastNode) {
+            n.isLastNode = false;
+            old = n;
+            view.setNodeLineIcos(setting, n);
+            break;
+          } else {
+            n = null;
+          }
+        }
+        return {"new": last, "old": old};
+      }
+    },
+
+    _z = {
+      view: _view,
+      data: _data
+    };
+  $.extend(true, $.fn.zTree._z, _z);
+
+  var zt = $.fn.zTree,
+    tools = zt._z.tools,
+    consts = zt.consts,
+    view = zt._z.view,
+    data = zt._z.data,
+    event = zt._z.event,
+    $$ = tools.$;
+
+  data.isHidden = function (setting, node, newIsHidden) {
+    if (!node) {
+      return false;
+    }
+    var key = setting.data.key.isHidden;
+    if (typeof newIsHidden !== 'undefined') {
+      if (typeof newIsHidden === "string") {
+        newIsHidden = tools.eqs(newIsHidden, "true");
+      }
+      newIsHidden = !!newIsHidden;
+      node[key] = newIsHidden;
+    } else if (typeof node[key] == "string"){
+      node[key] = tools.eqs(node[key], "true");
+    } else {
+      node[key] = !!node[key];
+    }
+    return node[key];
+  };
+
+  data.exSetting(_setting);
+  data.addInitNode(_initNode);
+  data.addBeforeA(_beforeA);
+  data.addZTreeTools(_zTreeTools);
+
+//	Override method in core
+  var _dInitNode = data.initNode;
+  data.initNode = function (setting, level, node, parentNode, isFirstNode, isLastNode, openFlag) {
+    var tmpPNode = (parentNode) ? parentNode : data.getRoot(setting),
+      children = tmpPNode[setting.data.key.children];
+    data.tmpHideFirstNode = view.setFirstNodeForHide(setting, children);
+    data.tmpHideLastNode = view.setLastNodeForHide(setting, children);
+    if (openFlag) {
+      view.setNodeLineIcos(setting, data.tmpHideFirstNode);
+      view.setNodeLineIcos(setting, data.tmpHideLastNode);
+    }
+    isFirstNode = (data.tmpHideFirstNode === node);
+    isLastNode = (data.tmpHideLastNode === node);
+    if (_dInitNode) _dInitNode.apply(data, arguments);
+    if (openFlag && isLastNode) {
+      view.clearOldLastNode(setting, node, openFlag);
+    }
+  };
+
+  var _makeChkFlag = data.makeChkFlag;
+  if (!!_makeChkFlag) {
+    data.makeChkFlag = function (setting, node) {
+      if (!!node && !!data.isHidden(setting, node)) {
+        return;
+      }
+      _makeChkFlag.apply(data, arguments);
+    }
+  }
+
+  var _getTreeCheckedNodes = data.getTreeCheckedNodes;
+  if (!!_getTreeCheckedNodes) {
+    data.getTreeCheckedNodes = function (setting, nodes, checked, results) {
+      if (!!nodes && nodes.length > 0) {
+        var p = nodes[0].getParentNode();
+        if (!!p && !!data.isHidden(setting, p)) {
+          return [];
+        }
+      }
+      return _getTreeCheckedNodes.apply(data, arguments);
+    }
+  }
+
+  var _getTreeChangeCheckedNodes = data.getTreeChangeCheckedNodes;
+  if (!!_getTreeChangeCheckedNodes) {
+    data.getTreeChangeCheckedNodes = function (setting, nodes, results) {
+      if (!!nodes && nodes.length > 0) {
+        var p = nodes[0].getParentNode();
+        if (!!p && !!data.isHidden(setting, p)) {
+          return [];
+        }
+      }
+      return _getTreeChangeCheckedNodes.apply(data, arguments);
+    }
+  }
+
+  var _expandCollapseSonNode = view.expandCollapseSonNode;
+  if (!!_expandCollapseSonNode) {
+    view.expandCollapseSonNode = function (setting, node, expandFlag, animateFlag, callback) {
+      if (!!node && !!data.isHidden(setting, node)) {
+        return;
+      }
+      _expandCollapseSonNode.apply(view, arguments);
+    }
+  }
+
+  var _setSonNodeCheckBox = view.setSonNodeCheckBox;
+  if (!!_setSonNodeCheckBox) {
+    view.setSonNodeCheckBox = function (setting, node, value, srcNode) {
+      if (!!node && !!data.isHidden(setting, node)) {
+        return;
+      }
+      _setSonNodeCheckBox.apply(view, arguments);
+    }
+  }
+
+  var _repairParentChkClassWithSelf = view.repairParentChkClassWithSelf;
+  if (!!_repairParentChkClassWithSelf) {
+    view.repairParentChkClassWithSelf = function (setting, node) {
+      if (!!node && !!data.isHidden(setting, node)) {
+        return;
+      }
+      _repairParentChkClassWithSelf.apply(view, arguments);
+    }
+  }
+})(jQuery);
+
+/***/ }),
+
+/***/ "5ca1":
+/***/ (function(module, exports, __webpack_require__) {
+
+var global = __webpack_require__("7726");
+var core = __webpack_require__("8378");
+var hide = __webpack_require__("32e9");
+var redefine = __webpack_require__("2aba");
+var ctx = __webpack_require__("9b43");
+var PROTOTYPE = 'prototype';
+
+var $export = function (type, name, source) {
+  var IS_FORCED = type & $export.F;
+  var IS_GLOBAL = type & $export.G;
+  var IS_STATIC = type & $export.S;
+  var IS_PROTO = type & $export.P;
+  var IS_BIND = type & $export.B;
+  var target = IS_GLOBAL ? global : IS_STATIC ? global[name] || (global[name] = {}) : (global[name] || {})[PROTOTYPE];
+  var exports = IS_GLOBAL ? core : core[name] || (core[name] = {});
+  var expProto = exports[PROTOTYPE] || (exports[PROTOTYPE] = {});
+  var key, own, out, exp;
+  if (IS_GLOBAL) source = name;
+  for (key in source) {
+    // contains in native
+    own = !IS_FORCED && target && target[key] !== undefined;
+    // export native or passed
+    out = (own ? target : source)[key];
+    // bind timers to global for call from export context
+    exp = IS_BIND && own ? ctx(out, global) : IS_PROTO && typeof out == 'function' ? ctx(Function.call, out) : out;
+    // extend global
+    if (target) redefine(target, key, out, type & $export.U);
+    // export
+    if (exports[key] != out) hide(exports, key, exp);
+    if (IS_PROTO && expProto[key] != out) expProto[key] = out;
+  }
+};
+global.core = core;
+// type bitmap
+$export.F = 1;   // forced
+$export.G = 2;   // global
+$export.S = 4;   // static
+$export.P = 8;   // proto
+$export.B = 16;  // bind
+$export.W = 32;  // wrap
+$export.U = 64;  // safe
+$export.R = 128; // real proto method for `library`
+module.exports = $export;
+
+
+/***/ }),
+
+/***/ "613b":
+/***/ (function(module, exports, __webpack_require__) {
+
+var shared = __webpack_require__("5537")('keys');
+var uid = __webpack_require__("ca5a");
+module.exports = function (key) {
+  return shared[key] || (shared[key] = uid(key));
+};
+
+
+/***/ }),
+
+/***/ "626a":
+/***/ (function(module, exports, __webpack_require__) {
+
+// fallback for non-array-like ES3 and non-enumerable old V8 strings
+var cof = __webpack_require__("2d95");
+// eslint-disable-next-line no-prototype-builtins
+module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
+  return cof(it) == 'String' ? it.split('') : Object(it);
+};
+
+
+/***/ }),
+
+/***/ "6821":
+/***/ (function(module, exports, __webpack_require__) {
+
+// to indexed object, toObject with fallback for non-array-like ES3 strings
+var IObject = __webpack_require__("626a");
+var defined = __webpack_require__("be13");
+module.exports = function (it) {
+  return IObject(defined(it));
+};
+
+
+/***/ }),
+
+/***/ "69a8":
+/***/ (function(module, exports) {
+
+var hasOwnProperty = {}.hasOwnProperty;
+module.exports = function (it, key) {
+  return hasOwnProperty.call(it, key);
+};
+
+
+/***/ }),
+
+/***/ "6a99":
+/***/ (function(module, exports, __webpack_require__) {
+
+// 7.1.1 ToPrimitive(input [, PreferredType])
+var isObject = __webpack_require__("d3f4");
+// instead of the ES6 spec version, we didn't implement @@toPrimitive case
+// and the second argument - flag - preferred type is a string
+module.exports = function (it, S) {
+  if (!isObject(it)) return it;
+  var fn, val;
+  if (S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;
+  if (typeof (fn = it.valueOf) == 'function' && !isObject(val = fn.call(it))) return val;
+  if (!S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;
+  throw TypeError("Can't convert object to primitive value");
+};
+
+
+/***/ }),
+
+/***/ "7333":
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ztree_vue_vue_type_style_index_0_id_c5d0020c_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("1910");
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ztree_vue_vue_type_style_index_0_id_c5d0020c_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ztree_vue_vue_type_style_index_0_id_c5d0020c_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ztree_vue_vue_type_style_index_0_id_c5d0020c_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+// 19.1.2.1 Object.assign(target, source, ...)
+var DESCRIPTORS = __webpack_require__("9e1e");
+var getKeys = __webpack_require__("0d58");
+var gOPS = __webpack_require__("2621");
+var pIE = __webpack_require__("52a7");
+var toObject = __webpack_require__("4bf8");
+var IObject = __webpack_require__("626a");
+var $assign = Object.assign;
+
+// should work with symbols and should have deterministic property order (V8 bug)
+module.exports = !$assign || __webpack_require__("79e5")(function () {
+  var A = {};
+  var B = {};
+  // eslint-disable-next-line no-undef
+  var S = Symbol();
+  var K = 'abcdefghijklmnopqrst';
+  A[S] = 7;
+  K.split('').forEach(function (k) { B[k] = k; });
+  return $assign({}, A)[S] != 7 || Object.keys($assign({}, B)).join('') != K;
+}) ? function assign(target, source) { // eslint-disable-line no-unused-vars
+  var T = toObject(target);
+  var aLen = arguments.length;
+  var index = 1;
+  var getSymbols = gOPS.f;
+  var isEnum = pIE.f;
+  while (aLen > index) {
+    var S = IObject(arguments[index++]);
+    var keys = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S);
+    var length = keys.length;
+    var j = 0;
+    var key;
+    while (length > j) {
+      key = keys[j++];
+      if (!DESCRIPTORS || isEnum.call(S, key)) T[key] = S[key];
+    }
+  } return T;
+} : $assign;
+
+
+/***/ }),
+
+/***/ "7726":
+/***/ (function(module, exports) {
+
+// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
+var global = module.exports = typeof window != 'undefined' && window.Math == Math
+  ? window : typeof self != 'undefined' && self.Math == Math ? self
+  // eslint-disable-next-line no-new-func
+  : Function('return this')();
+if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
+
+
+/***/ }),
+
+/***/ "77f1":
+/***/ (function(module, exports, __webpack_require__) {
+
+var toInteger = __webpack_require__("4588");
+var max = Math.max;
+var min = Math.min;
+module.exports = function (index, length) {
+  index = toInteger(index);
+  return index < 0 ? max(index + length, 0) : min(index, length);
+};
+
+
+/***/ }),
+
+/***/ "79e5":
+/***/ (function(module, exports) {
+
+module.exports = function (exec) {
+  try {
+    return !!exec();
+  } catch (e) {
+    return true;
+  }
+};
+
+
+/***/ }),
+
+/***/ "8378":
+/***/ (function(module, exports) {
+
+var core = module.exports = { version: '2.6.10' };
+if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
+
+
+/***/ }),
+
+/***/ "86cc":
+/***/ (function(module, exports, __webpack_require__) {
+
+var anObject = __webpack_require__("cb7c");
+var IE8_DOM_DEFINE = __webpack_require__("c69a");
+var toPrimitive = __webpack_require__("6a99");
+var dP = Object.defineProperty;
+
+exports.f = __webpack_require__("9e1e") ? Object.defineProperty : function defineProperty(O, P, Attributes) {
+  anObject(O);
+  P = toPrimitive(P, true);
+  anObject(Attributes);
+  if (IE8_DOM_DEFINE) try {
+    return dP(O, P, Attributes);
+  } catch (e) { /* empty */ }
+  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported!');
+  if ('value' in Attributes) O[P] = Attributes.value;
+  return O;
+};
+
 
 /***/ }),
 
@@ -14937,6 +15749,359 @@ function applyToTag (styleElement, obj) {
 
 /***/ }),
 
+/***/ "9b43":
+/***/ (function(module, exports, __webpack_require__) {
+
+// optional / simple context binding
+var aFunction = __webpack_require__("d8e8");
+module.exports = function (fn, that, length) {
+  aFunction(fn);
+  if (that === undefined) return fn;
+  switch (length) {
+    case 1: return function (a) {
+      return fn.call(that, a);
+    };
+    case 2: return function (a, b) {
+      return fn.call(that, a, b);
+    };
+    case 3: return function (a, b, c) {
+      return fn.call(that, a, b, c);
+    };
+  }
+  return function (/* ...args */) {
+    return fn.apply(that, arguments);
+  };
+};
+
+
+/***/ }),
+
+/***/ "9def":
+/***/ (function(module, exports, __webpack_require__) {
+
+// 7.1.15 ToLength
+var toInteger = __webpack_require__("4588");
+var min = Math.min;
+module.exports = function (it) {
+  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
+};
+
+
+/***/ }),
+
+/***/ "9e1e":
+/***/ (function(module, exports, __webpack_require__) {
+
+// Thank's IE8 for his funny defineProperty
+module.exports = !__webpack_require__("79e5")(function () {
+  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
+});
+
+
+/***/ }),
+
+/***/ "b5b9":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ztree_vue_vue_type_style_index_0_id_66a306bc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("3862");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ztree_vue_vue_type_style_index_0_id_66a306bc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ztree_vue_vue_type_style_index_0_id_66a306bc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ztree_vue_vue_type_style_index_0_id_66a306bc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "be13":
+/***/ (function(module, exports) {
+
+// 7.2.1 RequireObjectCoercible(argument)
+module.exports = function (it) {
+  if (it == undefined) throw TypeError("Can't call method on  " + it);
+  return it;
+};
+
+
+/***/ }),
+
+/***/ "c366":
+/***/ (function(module, exports, __webpack_require__) {
+
+// false -> Array#indexOf
+// true  -> Array#includes
+var toIObject = __webpack_require__("6821");
+var toLength = __webpack_require__("9def");
+var toAbsoluteIndex = __webpack_require__("77f1");
+module.exports = function (IS_INCLUDES) {
+  return function ($this, el, fromIndex) {
+    var O = toIObject($this);
+    var length = toLength(O.length);
+    var index = toAbsoluteIndex(fromIndex, length);
+    var value;
+    // Array#includes uses SameValueZero equality algorithm
+    // eslint-disable-next-line no-self-compare
+    if (IS_INCLUDES && el != el) while (length > index) {
+      value = O[index++];
+      // eslint-disable-next-line no-self-compare
+      if (value != value) return true;
+    // Array#indexOf ignores holes, Array#includes - not
+    } else for (;length > index; index++) if (IS_INCLUDES || index in O) {
+      if (O[index] === el) return IS_INCLUDES || index || 0;
+    } return !IS_INCLUDES && -1;
+  };
+};
+
+
+/***/ }),
+
+/***/ "c69a":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = !__webpack_require__("9e1e") && !__webpack_require__("79e5")(function () {
+  return Object.defineProperty(__webpack_require__("230e")('div'), 'a', { get: function () { return 7; } }).a != 7;
+});
+
+
+/***/ }),
+
+/***/ "ca5a":
+/***/ (function(module, exports) {
+
+var id = 0;
+var px = Math.random();
+module.exports = function (key) {
+  return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
+};
+
+
+/***/ }),
+
+/***/ "cb7c":
+/***/ (function(module, exports, __webpack_require__) {
+
+var isObject = __webpack_require__("d3f4");
+module.exports = function (it) {
+  if (!isObject(it)) throw TypeError(it + ' is not an object!');
+  return it;
+};
+
+
+/***/ }),
+
+/***/ "ce10":
+/***/ (function(module, exports, __webpack_require__) {
+
+var has = __webpack_require__("69a8");
+var toIObject = __webpack_require__("6821");
+var arrayIndexOf = __webpack_require__("c366")(false);
+var IE_PROTO = __webpack_require__("613b")('IE_PROTO');
+
+module.exports = function (object, names) {
+  var O = toIObject(object);
+  var i = 0;
+  var result = [];
+  var key;
+  for (key in O) if (key != IE_PROTO) has(O, key) && result.push(key);
+  // Don't enum bug & hidden keys
+  while (names.length > i) if (has(O, key = names[i++])) {
+    ~arrayIndexOf(result, key) || result.push(key);
+  }
+  return result;
+};
+
+
+/***/ }),
+
+/***/ "d3f4":
+/***/ (function(module, exports) {
+
+module.exports = function (it) {
+  return typeof it === 'object' ? it !== null : typeof it === 'function';
+};
+
+
+/***/ }),
+
+/***/ "d8e8":
+/***/ (function(module, exports) {
+
+module.exports = function (it) {
+  if (typeof it != 'function') throw TypeError(it + ' is not a function!');
+  return it;
+};
+
+
+/***/ }),
+
+/***/ "dfda":
+/***/ (function(module, exports) {
+
+/*
+ * email: bigablecat@hotmail.com
+ * Date: 2018-04-14
+ */
+
+/**
+ * @param zTreeId the ztree id used to get the ztree object
+ * @param searchField selector of your input for fuzzy search
+ * @param isHighLight whether highlight the match words, default true
+ * @param isExpand whether to expand the node, default false
+ *
+ * @returns
+ */
+(function($){
+	var zt = $.fn.zTree;
+	var _zTreeTools = function (setting, zTreeTools) {
+		zTreeTools.fuzzySearch = function (zTreeId, searchField, isHighLight, isExpand){
+
+			var zTreeObj = zt.getZTreeObj(zTreeId);//get the ztree object by ztree id
+			if(!zTreeObj){
+				alert("fail to get ztree object");
+			}
+			var nameKey = zTreeObj.setting.data.key.name; //get the key of the node name
+			isHighLight = isHighLight===false?false:true;//default true, only use false to disable highlight
+			isExpand = isExpand?true:false; // not to expand in default
+			zTreeObj.setting.view.nameIsHTML = isHighLight; //allow use html in node name for highlight use
+
+			var metaChar = '[\\[\\]\\\\\^\\$\\.\\|\\?\\*\\+\\(\\)]'; //js meta characters
+			var rexMeta = new RegExp(metaChar, 'gi');//regular expression to match meta characters
+
+			// keywords filter function
+			function ztreeFilter(zTreeObj,_keywords,callBackFunc) {
+				if(!_keywords){
+					_keywords =''; //default blank for _keywords
+				}
+
+				// function to find the matching node
+				function filterFunc(node) {
+					if(node && node.oldname && node.oldname.length>0){
+						node[nameKey] = node.oldname; //recover oldname of the node if exist
+					}
+					zTreeObj.updateNode(node); //update node to for modifications take effect
+					if (_keywords.length == 0) {
+						//return true to show all nodes if the keyword is blank
+						zTreeObj.showNode(node);
+						zTreeObj.expandNode(node,isExpand);
+						return true;
+					}
+					//transform node name and keywords to lowercase
+					if (node[nameKey] && node[nameKey].toLowerCase().indexOf(_keywords.toLowerCase())!=-1) {
+						if(isHighLight){ //highlight process
+							//a new variable 'newKeywords' created to store the keywords information
+							//keep the parameter '_keywords' as initial and it will be used in next node
+							//process the meta characters in _keywords thus the RegExp can be correctly used in str.replace
+							var newKeywords = _keywords.replace(rexMeta,function(matchStr){
+								//add escape character before meta characters
+								return '\\' + matchStr;
+							});
+							node.oldname = node[nameKey]; //store the old name
+							var rexGlobal = new RegExp(newKeywords, 'gi');//'g' for global,'i' for ignore case
+							//use replace(RegExp,replacement) since replace(/substr/g,replacement) cannot be used here
+							node[nameKey] = node.oldname.replace(rexGlobal, function(originalText){
+								//highlight the matching words in node name
+								var highLightText =
+									'<span style="color: whitesmoke;background-color: darkred;">'
+									+ originalText
+									+'</span>';
+								return 	highLightText;
+							});
+							zTreeObj.updateNode(node); //update node for modifications take effect
+						}
+						zTreeObj.showNode(node);//show node with matching keywords
+						return true; //return true and show this node
+					}
+
+					zTreeObj.hideNode(node); // hide node that not matched
+					return false; //return false for node not matched
+				}
+
+				var nodesShow = zTreeObj.getNodesByFilter(filterFunc); //get all nodes that would be shown
+				processShowNodes(nodesShow, _keywords);//nodes should be reprocessed to show correctly
+			}
+
+			/**
+			 * reprocess of nodes before showing
+			 */
+			function processShowNodes(nodesShow,_keywords){
+				if(nodesShow && nodesShow.length>0){
+					//process the ancient nodes if _keywords is not blank
+					if(_keywords.length>0){
+						$.each(nodesShow, function(n,obj){
+							var pathOfOne = obj.getPath();//get all the ancient nodes including current node
+							if(pathOfOne && pathOfOne.length>0){
+								//i < pathOfOne.length-1 process every node in path except self
+								for(var i=0;i<pathOfOne.length-1;i++){
+									zTreeObj.showNode(pathOfOne[i]); //show node
+									zTreeObj.expandNode(pathOfOne[i],true); //expand node
+								}
+							}
+						});
+					}else{ //show all nodes when _keywords is blank and expand the root nodes
+						var rootNodes = zTreeObj.getNodesByParam('level','0');//get all root nodes
+						$.each(rootNodes,function(n,obj){
+							zTreeObj.expandNode(obj,true); //expand all root nodes
+						});
+					}
+				}
+			}
+
+			//listen to change in input element
+			$(searchField).bind('input propertychange', function() {
+				var _keywords = $(this).val();
+				searchNodeLazy(_keywords); //call lazy load
+			});
+
+			var timeoutId = null;
+			var lastKeyword = '';
+			// excute lazy load once after input change, the last pending task will be cancled
+			function searchNodeLazy(_keywords) {
+				if (timeoutId) {
+					//clear pending task
+					clearTimeout(timeoutId);
+				}
+				timeoutId = setTimeout(function() {
+					if (lastKeyword === _keywords) {
+						return;
+					}
+					ztreeFilter(zTreeObj,_keywords); //lazy load ztreeFilter function
+					// $(searchField).focus();//focus input field again after filtering
+					lastKeyword = _keywords;
+				}, 500);
+			}
+		}
+	}
+	var data = zt._z.data;
+	data.addZTreeTools(_zTreeTools);
+})(jQuery)
+
+
+/***/ }),
+
+/***/ "e11e":
+/***/ (function(module, exports) {
+
+// IE 8- don't enum bug keys
+module.exports = (
+  'constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf'
+).split(',');
+
+
+/***/ }),
+
+/***/ "e6c6":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("2350")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".ztree{text-align:left;font-size:14px}.ztree>>>li{list-style-type:none;white-space:nowrap;outline:none}.ztree>>>li ul{position:relative;padding:0 0 0 20px;margin:0}.ztree>>>.line:before{position:absolute;top:0;left:10px;height:100%;content:\"\";border-right:1px dotted #dbdbdb}.ztree>>>.bottom_docu:after,.ztree>>>.bottom_docu:before,.ztree>>>.center_docu:after,.ztree>>>.center_docu:before,.ztree>>>.roots_docu:after,.ztree>>>.roots_docu:before{position:absolute;content:\"\";border:0 dotted #dbdbdb}.ztree>>>.roots_docu:before{left:10px;height:50%;top:50%;border-left-width:1px}.ztree>>>.roots_docu:after{top:50%;left:11px;width:50%;border-top-width:1px}.ztree>>>.center_docu:before{left:10px;height:100%;border-left-width:1px}.ztree>>>.center_docu:after{top:50%;left:11px;width:50%;border-top-width:1px}.ztree>>>.bottom_docu:before{left:10px;height:50%;border-left-width:1px}.ztree>>>.bottom_docu:after{top:50%;left:11px;width:50%;border-top-width:1px}.ztree>>>li a{display:inline-block;line-height:22px;height:22px;margin:0;cursor:pointer;-webkit-transition:none;transition:none;vertical-align:middle;color:#555}.ztree>>>.node_name{display:inline-block;padding:0 3px;border-radius:4px}.ztree>>>.curSelectedNode .node_name{color:#000;background-color:#c9e9f7}.ztree>>>.curSelectedNode_Edit{height:20px;opacity:.8;color:#000;border:1px solid #6cc2e8;background-color:#9dd6f0}.ztree>>>.tmpTargetNode_inner{opacity:.8;color:#fff;background-color:#4fcbf0;filter:alpha(opacity=80)}.ztree>>>.rename{font-size:12px;line-height:22px;width:80px;height:22px;margin:0;padding:0;vertical-align:top;border:0;background:none}.ztree>>>.button{position:relative;display:inline-block;line-height:22px;height:22px;width:22px;cursor:pointer;text-align:center;vertical-align:middle}.ztree>>>.button.edit{color:#25ae88}.ztree>>>.button.remove{color:#cb4042}.ztree>>>.button.chk{position:relative;width:14px;height:14px;margin:0 4px 0 0;border:1px solid #d7dde4;border-radius:2px;background:#fff}.ztree>>>.chk.radio_false_disable,.ztree>>>.chk.radio_false_full,.ztree>>>.chk.radio_false_full_focus,.ztree>>>.chk.radio_false_part,.ztree>>>.chk.radio_false_part_focus,.ztree>>>.chk.radio_true_disable,.ztree>>>.chk.radio_true_full,.ztree>>>.chk.radio_true_full_focus,.ztree>>>.chk.radio_true_part,.ztree>>>.chk.radio_true_part_focus{border-radius:8px}.ztree>>>.button.chk:after{position:absolute;top:1px;left:4px;width:4px;height:8px;content:\"\";transition:-webkit-transform .2s ease-in-out;-webkit-transition:-webkit-transform .2s ease-in-out;transition:transform .2s ease-in-out;transition:transform .2s ease-in-out,-webkit-transform .2s ease-in-out;-webkit-transform:rotate(0deg) scale(0);transform:rotate(0deg) scale(0);border-right:2px solid #fff;border-bottom:2px solid #fff}.ztree>>>.button.checkbox_false_full_focus{border-color:#ccc}.ztree>>>.button.checkbox_true_disable,.ztree>>>.button.checkbox_true_full,.ztree>>>.button.checkbox_true_full_focus,.ztree>>>.button.checkbox_true_part,.ztree>>>.button.checkbox_true_part_focus{border-color:#39f;background-color:#39f}.ztree>>>.button.checkbox_true_disable:after,.ztree>>>.button.checkbox_true_full:after,.ztree>>>.button.checkbox_true_full_focus:after{-webkit-transform:rotate(45deg) scale(1);transform:rotate(45deg) scale(1)}.ztree>>>.button.checkbox_true_part:after,.ztree>>>.button.checkbox_true_part_focus:after{top:5px;left:2px;width:10px;height:1px;-webkit-transform:rotate(0deg) scale(1);transform:rotate(0deg) scale(1);border-right:0}.ztree>>>.button.radio_true_full,.ztree>>>.chk.radio_true_full_focus,.ztree>>>.chk.radio_true_part,.ztree>>>.chk.radio_true_part_focus{border-color:#39f}.ztree>>>.button.radio_true_full:after,.ztree>>>.chk.radio_true_full_focus:after,.ztree>>>.chk.radio_true_part:after,.ztree>>>.chk.radio_true_part_focus:after{top:3px;left:3px;width:8px;-webkit-transform:rotate(0deg) scale(1);transform:rotate(0deg) scale(1);border:0;border-radius:4px;background:#39f}.ztree>>>.button.checkbox_false_disable,.ztree>>>.button.checkbox_true_disable,.ztree>>>.chk.radio_false_disable,.ztree>>>.chk.radio_true_disable{cursor:not-allowed}.ztree>>>.button.checkbox_false_disable{background-color:#f3f3f3}.ztree>>>.button.bottom_close:before,.ztree>>>.button.bottom_open:before,.ztree>>>.button.center_close:before,.ztree>>>.button.center_open:before,.ztree>>>.button.noline_close:before,.ztree>>>.button.noline_open:before,.ztree>>>.button.root_close:before,.ztree>>>.button.root_open:before,.ztree>>>.button.roots_close:before,.ztree>>>.button.roots_open:before{position:absolute;top:5px;left:5px;content:\"\";transition:-webkit-transform .3s ease;-webkit-transition:-webkit-transform .3s ease;transition:transform .3s ease;transition:transform .3s ease,-webkit-transform .3s ease;-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:25% 50%;transform-origin:25% 50%;border:6px solid;border-color:transparent transparent transparent #666}.ztree>>>.button.bottom_open:before,.ztree>>>.button.center_open:before,.ztree>>>.button.noline_open:before,.ztree>>>.button.root_open:before,.ztree>>>.button.roots_open:before{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.ztree>>>.button.ico_loading{margin-right:2px;background:url(\"data:image/gif;base64,R0lGODlhEAAQAKIGAMLY8YSx5HOm4Mjc88/g9Ofw+v///wAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAGACwAAAAAEAAQAAADMGi6RbUwGjKIXCAA016PgRBElAVlG/RdLOO0X9nK61W39qvqiwz5Ls/rRqrggsdkAgAh+QQFCgAGACwCAAAABwAFAAADD2hqELAmiFBIYY4MAutdCQAh+QQFCgAGACwGAAAABwAFAAADD1hU1kaDOKMYCGAGEeYFCQAh+QQFCgAGACwKAAIABQAHAAADEFhUZjSkKdZqBQG0IELDQAIAIfkEBQoABgAsCgAGAAUABwAAAxBoVlRKgyjmlAIBqCDCzUoCACH5BAUKAAYALAYACgAHAAUAAAMPaGpFtYYMAgJgLogA610JACH5BAUKAAYALAIACgAHAAUAAAMPCAHWFiI4o1ghZZJB5i0JACH5BAUKAAYALAAABgAFAAcAAAMQCAFmIaEp1motpDQySMNFAgA7\") 0 no-repeat}.ztree>>>.tmpTargetzTree{opacity:.8;background-color:#2ea9df;filter:alpha(opacity=80)}.ztree>>>.tmpzTreeMove_arrow{position:absolute;width:18px;height:18px;color:#4fcbf0}.ztree>>>.ztree.zTreeDragUL{overflow:hidden;position:absolute;width:auto;height:auto;margin:0;padding:0;opacity:.8;border:1px dotted #176b53;background-color:#dbdbdb;filter:alpha(opacity=80)}.zTreeMask{position:absolute;z-index:10000;opacity:0;background-color:#cfcfcf;filter:alpha(opacity=0)}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "f6fd":
 /***/ (function(module, exports) {
 
@@ -14980,6 +16145,25 @@ function applyToTag (styleElement, obj) {
 
 /***/ }),
 
+/***/ "f751":
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.3.1 Object.assign(target, source)
+var $export = __webpack_require__("5ca1");
+
+$export($export.S + $export.F, 'Object', { assign: __webpack_require__("7333") });
+
+
+/***/ }),
+
+/***/ "fa5b":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("5537")('native-function-to-string', Function.toString);
+
+
+/***/ }),
+
 /***/ "fb15":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -15003,17 +16187,21 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"596a41cd-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ztree.vue?vue&type=template&id=c5d0020c&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"7d4e5d4c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ztree.vue?vue&type=template&id=66a306bc&scoped=true&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"ztree",attrs:{"id":_vm.ztreeId}})}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/ztree.vue?vue&type=template&id=c5d0020c&scoped=true&
+// CONCATENATED MODULE: ./src/components/ztree.vue?vue&type=template&id=66a306bc&scoped=true&
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.object.assign.js
+var es6_object_assign = __webpack_require__("f751");
 
 // EXTERNAL MODULE: ./node_modules/jquery/dist/jquery.js
 var jquery = __webpack_require__("1157");
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ztree.vue?vue&type=script&lang=js&
+
 //
 //
 //
@@ -15025,6 +16213,10 @@ if (!window.jQuery) {
 }
 
 __webpack_require__("91e5");
+
+__webpack_require__("5aa5");
+
+__webpack_require__("dfda");
 
 /* harmony default export */ var ztreevue_type_script_lang_js_ = ({
   props: {
@@ -15189,8 +16381,8 @@ __webpack_require__("91e5");
 });
 // CONCATENATED MODULE: ./src/components/ztree.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_ztreevue_type_script_lang_js_ = (ztreevue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/ztree.vue?vue&type=style&index=0&id=c5d0020c&scoped=true&lang=css&
-var ztreevue_type_style_index_0_id_c5d0020c_scoped_true_lang_css_ = __webpack_require__("5ea6");
+// EXTERNAL MODULE: ./src/components/ztree.vue?vue&type=style&index=0&id=66a306bc&scoped=true&lang=css&
+var ztreevue_type_style_index_0_id_66a306bc_scoped_true_lang_css_ = __webpack_require__("b5b9");
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
@@ -15302,7 +16494,7 @@ var component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "c5d0020c",
+  "66a306bc",
   null
   
 )
