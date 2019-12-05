@@ -22,18 +22,18 @@
       }
       var nameKey = zTreeObj.setting.data.key.name; //get the key of the node name
       isHighLight = isHighLight === false
-                    ? false
-                    : true;//default true, only use false to disable highlight
+        ? false
+        : true;//default true, only use false to disable highlight
       isExpand = isExpand
-                 ? true
-                 : false; // not to expand in default
+        ? true
+        : false; // not to expand in default
       zTreeObj.setting.view.nameIsHTML = isHighLight; //allow use html in node name for highlight use
 
       var metaChar = '[\\[\\]\\\\\^\\$\\.\\|\\?\\*\\+\\(\\)]'; //js meta characters
       var rexMeta = new RegExp(metaChar, 'gi');//regular expression to match meta characters
 
       // keywords filter function
-      function ztreeFilter (zTreeObj, _keywords, callBackFunc) {
+      function ztreeFilter (_keywords, callBackFunc) {
         if (!_keywords) {
           _keywords = ''; //default blank for _keywords
         }
@@ -47,7 +47,7 @@
           if (_keywords.length == 0) {
             //return true to show all nodes if the keyword is blank
             zTreeObj.showNode(node);
-            zTreeObj.expandNode(node, isExpand);
+            zTreeObj.expandNode(node, false);
             return true;
           }
           //transform node name and keywords to lowercase
@@ -98,14 +98,17 @@
                 //i < pathOfOne.length-1 process every node in path except self
                 for (var i = 0; i < pathOfOne.length - 1; i++) {
                   zTreeObj.showNode(pathOfOne[i]); //show node
-                  zTreeObj.expandNode(pathOfOne[i], true); //expand node
+                  zTreeObj.expandNode(pathOfOne[i], false); //expand node
                 }
               }
             });
+            if(isExpand){ //expand node
+              zTreeObj.expandNode(nodesShow[0].getPath()[0], true);
+            }
           } else { //show all nodes when _keywords is blank and expand the root nodes
             var rootNodes = zTreeObj.getNodesByParam('level', '0');//get all root nodes
             $.each(rootNodes, function (n, obj) {
-              zTreeObj.expandNode(obj, true); //expand all root nodes
+              zTreeObj.expandNode(obj, false); //expand all root nodes
             });
           }
         }
@@ -130,10 +133,26 @@
           if (lastKeyword === _keywords) {
             return;
           }
-          ztreeFilter(zTreeObj, _keywords); //lazy load ztreeFilter function
+          ztreeFilter(_keywords); //lazy load ztreeFilter function
           // $(searchField).focus();//focus input field again after filtering
           lastKeyword = _keywords;
         }, 500);
+      }
+      function resetKeyWord(){
+        lastKeyword = '';
+      }
+      function clear(){
+        if (timeoutId) {
+          //clear pending task
+          clearTimeout(timeoutId);
+        }
+        resetKeyWord();
+        ztreeFilter(lastKeyword);
+      }
+      return {
+        resetKeyWord: resetKeyWord,
+        searchNodeInstant: ztreeFilter,
+        clear: clear
       }
     };
   };
